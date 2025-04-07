@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup - SRSFY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <h1>SRSFY</h1>
+    <div>
+      <a href="signup.html">Signup</a>
+      <a href="login.html">Login</a>
+      <a href="plans.html">Plans</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 120px;">
+    <form action="signup.php" method="POST">
+      <h2>Create Account</h2>
+      
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" name="fullname" id="fullname" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" required><br>
+
+      <label for="plan">Choose Plan:</label><br>
+      <select name="plan_id" id="plan" required>
+        <option value="1">Basic - Free</option>
+        <option value="2">Premium - ₹99</option>
+        <option value="3">Pro - ₹199</option>
+      </select><br>
+
+      <input type="submit" value="Signup">
+    </form>
+  </div>
+
+</body>
+</html>
