@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - SRSFY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <h1>SRSFY</h1>
+    <div>
+      <a href="home.php">Home</a>
+      <a href="plans.html">Upgrade Plan</a>
+      <a href="logout.php">Logout</a>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 120px;">
+    <h2>We value your feedback 💬</h2>
+
+    <form action="submit_feedback.php" method="POST">
+      <label for="message">Your Message:</label><br>
+      <textarea name="message" id="message" rows="5" required placeholder="Enter your feedback here..." style="width: 100%; padding: 10px; border-radius: 5px;"></textarea><br>
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </div>
+
+</body>
+</html>

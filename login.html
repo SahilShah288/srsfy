@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - SRSFY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <h1>SRSFY</h1>
+    <div>
+      <a href="signup.html">Signup</a>
+      <a href="login.html">Login</a>
+      <a href="plans.html">Plans</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 120px;">
+    <form action="login.php" method="POST">
+      <h2>Login to SRSFY</h2>
+
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" required><br>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+</body>
+</html>
