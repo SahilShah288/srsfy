@@ -52,7 +52,7 @@ $songs_result = $conn->query($songs_sql);
         <div class="song-card">
           <h4><?php echo htmlspecialchars($row['title']); ?></h4>
           <p><?php echo htmlspecialchars($row['artist']); ?></p>
-          <audio controls src="<?php echo htmlspecialchars($row['url']); ?>"></audio>
+          <audio controls src="<?php echo htmlspecialchars($row['url']); ?>"type = "songs/mpeg"></audio>
         </div>
       <?php endwhile; ?>
     </div>
