@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
@@ -60,3 +61,17 @@ $songs_result = $conn->query($songs_sql);
 
 </body>
 </html>
+
+<script>
+  const audioElements = document.querySelectorAll('audio');
+
+  audioElements.forEach(audio => {
+    audio.addEventListener('play', () => {
+      audioElements.forEach(otherAudio => {
+        if (otherAudio !== audio) {
+          otherAudio.pause();
+        }
+      });
+    });
+  });
+</script>
